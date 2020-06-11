@@ -1,28 +1,35 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+
+    .container{
+        max-width: 1170px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
     .banner-social {
         left: -10%;
     }
-
+    .slider-text h2 span {
+        display: inline;
+    }
     .slider-height {
         background-repeat: no-repeat;
         padding-bottom: 70px;
         background-size: cover;
-    }
-    .slider-text {
-        padding-top: 0;
+        background-position: bottom;
+        min-height: 0;
     }
 
     .slider-text h2 {
-        font-size: 65px;
+        font-size: 60px;
     }
 
     .slider-img img {
         max-width: 100%;
         margin-left: 60px;
-    }
-    .slider-text {
-        margin-left: 70px;
     }
 
     .ab-img img {
@@ -34,12 +41,23 @@
     }
 
     .ab-img-right {
-        margin-left: -138px;
+        margin-left: 0;
     }
 
+    .single-service p {
+        font-size: 14px;
+    }
+    .single-service h5 {
+        font-size: 29px;
+    }
+
+
     .feature .ab-img {
-        margin-left: 0;
-        display: block;
+        margin-left: -30px;
+        max-width: 100%;
+    }
+
+    .ab-img-right img {
         max-width: 100%;
     }
 
@@ -54,27 +72,47 @@
         max-width: 100%;
     }
 
-    .slick-dots li button {
-        margin-bottom: 20px;
-    }
-
 }
 
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+    .slider-text h2 span {
+        display: inline;
+    }
+
     .slick-dots li button {
         margin-bottom: 130px;
     }
     .banner-social {
-        left: -4%;
+        left: -10%;
     }
 
-    .slider-text {
-        margin-top: -300px;
+    .ab-img img {
+        max-width: 100%;
     }
+    .ab-img {
+        margin-left: 0;
+    }
+    .ab-content p {
+        margin-right: 0;
+    }
+    p {
+        font-size: 15px;
+    }
+    .slider-height {
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .slider-text {
+        padding-top: 0;
+        margin-left: 50px;
+    }
+
     .slider-text h2 {
-        font-size: 60px;
+        font-size: 58px;
     }
 
     .feature .ab-img {
@@ -83,10 +121,19 @@
     .ab-img-right {
          margin-left: 0;
     }
-
+    .ab-img-right img{
+        max-width: 100%;
+    }
     .marketing-img {
         top: 20%;
         left: 15%;
+    }
+    .single-service p {
+        font-size: 17px
+    }
+    .copyright-area p, a {
+        color: #fff;
+        font-size: 16px;
     }
 
 }
@@ -94,6 +141,20 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .slider-height {
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .slider-height {
+        min-height: 500px;
+    }
+
+    .slider-text h2 span {
+        display: inline;
+    }
     .ab-img {
         margin-left: 0;
     }
@@ -153,15 +214,34 @@
     }
 
     .single-service {
-        padding: 0;
+        padding: 30px 0;
     }
     .single-service p {
         margin: 0px 15px;
     }
+    .single-list-right p {
+        color: #ffff;
+         margin-top: 0;
+    }
+
+    .single-list-left p {
+        margin-top: 0;
+    }
+
 }
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    .slider-text h2 span {
+        display: inline;
+    }
+    .slider-height {
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+        background-size: cover;
+        background-position: bottom;
+    }
+
     .mean-container a.meanmenu-reveal {
         padding: 20px 20px;
         top: -40px;
@@ -211,7 +291,7 @@
         font-size: 33px
     }
     p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .banner-social {
@@ -239,7 +319,17 @@
     .single-service p {
         margin: 0px 15px;
     }
+    .slider-height {
+        min-height: 0;
+    }
 
+    .single-list-left p {
+         margin-top: 0;
+    }
+
+    .single-list-right p {
+        margin-top: 0;
+    }
 }
  
 /* Large Mobile :480px. */
