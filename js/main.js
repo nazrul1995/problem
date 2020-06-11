@@ -19,6 +19,21 @@ $(window).on('scroll', function () {
 
 
 
+	var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+	if (is_chrome) {
+		var attributes = ['home', 'whatido', 'myworks', 'about', 'contact'];
+
+		$.each(attributes, function( index, value ) {
+			$('a[href="#' + value + '"]').click(function() {
+				$('html, body').animate({
+					scrollTop: $('#' + value).offset().top
+				}, 1000);
+			});
+		});
+	}
+
+
 // mainSlider
 function mainSlider() {
 	var BasicSlider = $('.slider-active');
@@ -32,7 +47,7 @@ function mainSlider() {
 	});
 	BasicSlider.slick({
 		autoplay: false,
-		autoplaySpeed: 100000000000,
+		autoplaySpeed: 1000,
 		dots: true,
 		fade: true,
 		arrows: false,
