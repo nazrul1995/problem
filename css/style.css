@@ -452,9 +452,10 @@ label {
 }
 .slider-text h2 span {
     color: #e05e5f;
+    display: block;
 }
 .slider-text p {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     color: #ffff;
 }
 
@@ -470,8 +471,8 @@ label {
 }
 .banner-social {
     position: absolute;
-    left: -5%;
-    top: 20%;
+    left: -7%;
+    top: 25%;
 }
 .banner-social ul li {
     position: relative;
