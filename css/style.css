@@ -781,6 +781,10 @@ label {
     margin-right: -187px;
 }
 
+.mfp-wrap {
+    z-index: 100000;
+}
+
 .quality-box-img img {
     z-index: 0;
     margin-left: -65px;
@@ -907,6 +911,10 @@ label {
 }
 .ser-box {
     padding: 30px 90px;
+}
+.ser-box:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1.929px 6.729px 13px 0px rgba(251, 94, 96, 0.11);
 }
 .ser-box-img {
     margin-left: 20px;

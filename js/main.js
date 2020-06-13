@@ -154,73 +154,14 @@ mainSlider();
 
 
 
-
-// owlCarousel
-$('').owlCarousel({
-    loop:true,
-    margin:0,
-	items:2,
-	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    nav:true,
-	dots:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        767:{
-            items:3
-        },
-        992:{
-            items:5
-        }
-    }
-})
-
-
-/* magnificPopup img view */
-$('.popup-image').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
-});
-
 /* magnificPopup video view */
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
 
 
-// isotop
-$('.grid').imagesLoaded( function() {
-	// init Isotope
-	var $grid = $('.grid').isotope({
-	  itemSelector: '.grid-item',
-	  percentPosition: true,
-	  masonry: {
-		// use outer width of grid-sizer for columnWidth
-		columnWidth: '.grid-item',
-	  }
-	});
-});
 
-// filter items on button click
-$('.portfolio-menu').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
-
-//for menu active class
-$('.portfolio-menu button').on('click', function(event) {
-	$(this).siblings('.active').removeClass('active');
-	$(this).addClass('active');
-	event.preventDefault();
-});
-
-
-
-
-// scrollToTop
+/*// scrollToTop
 $.scrollUp({
 	scrollName: 'scrollUp', // Element ID
 	topDistance: '300', // Distance from top before showing element (px)
@@ -230,10 +171,9 @@ $.scrollUp({
 	animationOutSpeed: 200, // Animation out speed (ms)
 	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-});
+});*/
 
-// WOW active
-new WOW().init();
+
 
 
 })(jQuery);
