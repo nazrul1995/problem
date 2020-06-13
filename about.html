@@ -28,10 +28,51 @@
         </style>
     </head>
     <body>
-
+    <!-- preloader  -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                        <span data-text-preloader="X" class="letters-loading">
+                           A
+                        </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                            G
+                        </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                            E
+                        </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                            N
+                        </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                            C
+                        </span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
     <!-- header start -->
     <header>
-        <div class="header-area transparent-header pb-50 pt-50">
+        <div class="header-area transparent-header pb-50 pt-50" id="header-sticky">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 d-flex align-items-center">
@@ -39,7 +80,7 @@
                     </div>
                     <div class="col-xl-10 col-lg-10">
                         <div class="header-revel pl-65 f-right d-none d-lg-block">
-                            <a><img src="img/shape/menu-icon.png" alt=""></a>
+                            <a onclick="openNav()"><img src="img/shape/menu-icon.png" alt=""></a>
                         </div>
                         <div class="main-menu f-right">
                             <nav id="mobile-menu">
@@ -316,14 +357,14 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="team-single text-center pt-50">
-                                <img src="img/about/team-1.png" alt="">
+                                <img src="img/about/team-2.png" alt="">
                                 <h4>Lakshmi c</h4>
                                 <span>Producer</span>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="team-single text-center pt-50">
-                                <img src="img/about/team-1.png" alt="">
+                                <img src="img/about/team-3.png" alt="">
                                 <h4>Lakshmi c</h4>
                                 <span>Producer</span>
                             </div>
@@ -333,21 +374,21 @@
                     <div class="row pt-70">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="team-single text-center pt-50">
-                                <img src="img/about/team-1.png" alt="">
+                                <img src="img/about/team-5.png" alt="">
                                 <h4>Lakshmi c</h4>
                                 <span>Producer</span>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="team-single text-center pt-50">
-                                <img src="img/about/team-1.png" alt="">
+                                <img src="img/about/team-6.png" alt="">
                                 <h4>Lakshmi c</h4>
                                 <span>Producer</span>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="team-single text-center pt-50">
-                                <img src="img/about/team-1.png" alt="">
+                                <img src="img/about/team-3.png" alt="">
                                 <h4>Lakshmi c</h4>
                                 <span>Producer</span>
                             </div>
@@ -358,6 +399,44 @@
         </section>
 
         <!-- team area end -->
+
+        <div id="myNav" class="overlay">
+            <div class="container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/menu-icon.png" alt=""></a>
+                <div class="overlay-content">
+                    <div class="overlay-nav-upper">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Live 3D</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="overlay-nav-lower">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Live 3D</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="overlay-btn f-right mt-100"><a href="#" class="btn">Reach Us</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <ul class="overlay-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i> Faceebook</a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i> Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- footer-section start -->
 
@@ -429,6 +508,15 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/ajax-form.js"></script>
         <script src="js/main.js"></script>
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.height = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.height = "0%";
+                }
+            </script>
 
     </body>
 </html>

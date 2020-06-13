@@ -14,8 +14,8 @@
 		<!-- CSS here -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <!--  <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">-->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/meanmenu.css">
         <link rel="stylesheet" href="css/slick.css">
@@ -27,10 +27,51 @@
         </style>
     </head>
     <body>
-
+    <!-- preloader  -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                        <span data-text-preloader="X" class="letters-loading">
+                           A
+                        </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                            G
+                        </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                            E
+                        </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                            N
+                        </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                            C
+                        </span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
     <!-- header start -->
     <header>
-        <div class="header-area transparent-header pb-50 pt-50">
+        <div class="header-area transparent-header pb-50 pt-50" id="header-sticky">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 d-flex align-items-center">
@@ -38,7 +79,7 @@
                     </div>
                     <div class="col-xl-10 col-lg-10">
                         <div class="header-revel pl-65 f-right d-none d-lg-block">
-                            <a><img src="img/shape/menu-icon.png" alt=""></a>
+                            <a onclick="openNav()"><img src="img/shape/menu-icon.png" alt=""></a>
                         </div>
                         <div class="main-menu f-right">
                             <nav id="mobile-menu">
@@ -99,9 +140,9 @@
                                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                         </ul>
                                     </div>
-                                    <h2>We <span>Create</span>  Experince That Last Long </h2>
-                                    <p>We take aid of Interactive Marketing presentation using technolgy to keep clients engaged </p>
-                                    <div class="slider-btn"><a href="#" class="btn">Get In Touch</a></div>
+                                    <h2 class="wow fadeInUp  animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">We <span>Create</span>  Experince That Last Long </h2>
+                                    <p class="wow fadeInUp  animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">We take aid of Interactive Marketing presentation using technolgy to keep clients engaged </p>
+                                    <div class="slider-btn animate__bounceIn"><a href="#" class="btn">Get In Touch</a></div>
                                 </div>
                             </div>
                             <div class="offset-xl-6 col-lg-4"></div>
@@ -160,7 +201,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="ab-img">
+                        <div class="ab-img" data-aos="fade-up">
                             <img src="img/about/ab-1.png" alt="ab-img">
                         </div>
                     </div>
@@ -360,6 +401,44 @@
                 </div>
             </div>
         </section>
+         <div id="myNav" class="overlay">
+                 <div class="container">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/menu-icon.png" alt=""></a>
+                     <div class="overlay-content">
+                         <div class="overlay-nav-upper">
+                             <ul>
+                                 <li><a href="#">About</a></li>
+                                 <li><a href="#">Services</a></li>
+                                 <li><a href="#">Live 3D</a></li>
+                             </ul>
+                         </div>
+                         <div class="row">
+                             <div class="col-xl-6">
+                                 <div class="overlay-nav-lower">
+                                     <ul>
+                                         <li><a href="#">About</a></li>
+                                         <li><a href="#">Services</a></li>
+                                         <li><a href="#">Live 3D</a></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                             <div class="col-xl-6">
+                                 <div class="overlay-btn f-right mt-100"><a href="#" class="btn">Reach Us</a></div>
+                             </div>
+                         </div>
+                             <div class="row">
+                                 <div class="col-xl-12">
+                                     <ul class="overlay-social">
+                                         <li><a href="#"><i class="fab fa-facebook-f"></i> Faceebook</a></li>
+                                         <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                         <li><a href="#"><i class="fab fa-linkedin"></i> Instagram</a></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
+                 </div>
+
 
         <!-- global-section End -->
         <!-- footer-section start -->
@@ -429,8 +508,20 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src="js/ajax-form.js"></script>
         <script src="js/main.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 
     </body>
 </html>

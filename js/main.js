@@ -1,6 +1,45 @@
 (function ($) {
 "use strict";
 
+
+	/*------------- preloader js --------------*/
+	function loader() {
+		$(window).on('load', function () {
+			$('#ctn-preloader').addClass('loaded');
+			$("#loading").fadeOut(500);
+			// Una vez haya terminado el preloader aparezca el scroll
+
+			if ($('#ctn-preloader').hasClass('loaded')) {
+				// Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+				$('#preloader').delay(900).queue(function () {
+					$(this).remove();
+				});
+			}
+		});
+	}
+	loader();
+
+	// Tooltips
+	$('[data-toggle="tooltip"]').tooltip();
+
+	// countdown
+	$('[data-countdown]').each(function () {
+		var $this = $(this), finalDate = $(this).data('countdown');
+		$this.countdown(finalDate, function (event) {
+			$this.html(event.strftime('<div class="time-count">%D <span>days</span></div><div class="time-count">%H <span>hour</span></div><div class="time-count">%M <span>minute</span></div><div class="time-count">%S <span>Second</span></div>'));
+		});
+	});
+	// sticky
+	$(window).on('scroll', function () {
+		var scroll = $(window).scrollTop();
+		if (scroll < 2) {
+			$("#header-sticky").removeClass("sticky-menu");
+		} else {
+			$("#header-sticky").addClass("sticky-menu");
+		}
+	});
+
+
 // meanmenu
 $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile-menu',
@@ -112,6 +151,8 @@ mainSlider();
 			// instead of a settings object
 		]
 	});
+
+
 
 
 // owlCarousel
