@@ -279,6 +279,11 @@
         margin-left: -50px;
     }
 
+    /*product page*/
+    .sd-wrapper {
+        padding: 30px;
+    }
+
 }
 
  
@@ -425,6 +430,17 @@
     .virtual-content p {
         margin-left: 0;
     }
+
+    /*product page*/
+    .example-area-content {
+        margin-right: -5px;
+    }
+
+    .d-btn-img {
+         margin-left: 0;
+        margin-top: 30px;
+    }
+
 }
  
 /* small mobile :320px. */
@@ -630,6 +646,28 @@
 
     .widget p {
         font-size: 15px;
+    }
+    .d-btn-img {
+         margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .example-active .slick-next {
+        right: 0px;
+    }
+
+    .example-active .slick-arrow i {
+        right: 8px;
+        top: 20px;
+    }
+
+    .app-btn .btn {
+        margin-left: 0;
+    }
+
+    .form-area {
+        background: #ffff;
+        padding: 10px;
     }
 
 }
