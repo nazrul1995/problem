@@ -455,9 +455,12 @@
         background-position: bottom;
     }
 
+    .logo img{
+        max-width: 76%;
+    }
     .mean-container a.meanmenu-reveal {
         padding: 20px 20px;
-        top: -40px;
+        top: -34px;
     }
 
     .slider-text {
