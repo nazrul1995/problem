@@ -155,7 +155,9 @@
         font-size: 40px;
     }
 
-
+    .sd-box {
+        padding: 0;
+    }
     .slider-2 .banner-social {
         left: -7%;
     }
@@ -413,6 +415,16 @@
         margin-left: 0;
     }
 
+    .single-download {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .sd-box {
+        padding: 0;
+    }
+
+
     /*service page*/
 
     .virtual-img {
@@ -440,7 +452,9 @@
          margin-left: 0;
         margin-top: 30px;
     }
-
+    .sd-box h4 {
+        font-size: 22px;
+    }
 }
  
 /* small mobile :320px. */
@@ -671,6 +685,17 @@
     .form-area {
         background: #ffff;
         padding: 10px;
+    }
+    .single-download {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .sd-box {
+        padding: 0;
+    }
+    .sd-box h4 {
+        font-size: 22px;
     }
 
 }
