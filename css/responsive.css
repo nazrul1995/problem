@@ -130,6 +130,13 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+    .main-menu ul li {
+        margin: 0 20px;
+    }
+    .header-revel {
+        margin-top: 10px;
+        margin-left: -50px;
+    }
     .slider-img img {
         margin-left: 0;
     }
@@ -291,7 +298,24 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .transparent-header {
+        padding: 0;
+    }
 
+    .header-revel {
+        margin-top: -50px;
+    }
+
+    .overlay .btn {
+        padding: 2rem;
+    }
+    .nav-media-block li{
+        margin-right: 1rem;
+    }
+
+    ul.nav-primary-list li {
+        margin-bottom: 0.5rem;
+    }
     .slider-height {
         background-repeat: no-repeat;
         padding-bottom: 70px;
@@ -330,7 +354,7 @@
     }
 
     .single-list-right {
-        margin-left: 10px;
+        margin-left: 0;
     }
 
     .mean-container a.meanmenu-reveal {
@@ -356,8 +380,15 @@
     }
 
     .single-list-left img {
-        right: -4%;
-        top: 18%;
+        right: 0;
+        left: -20px;
+        top: 10px;
+    }
+
+    .marketing-img {
+        margin-left: 0;
+        top: 180px;
+        left: 200px;
     }
 
     .section-title h3 {
@@ -384,11 +415,14 @@
     .single-list-right p {
         color: #ffff;
         margin-top: 0;
+        text-align: left;
     }
 
     .single-list-left p {
         margin-top: 0;
+        text-align: left;
     }
+
 
     /*about*/
     .slider-2 .slider-img img {
@@ -455,6 +489,18 @@
     .sd-box h4 {
         font-size: 22px;
     }
+
+    .top-img {
+        flex-direction: column-reverse!important;
+    }
+
+    .marketing-img img {
+        max-width: 65%;
+    }
+
+    .marketing-wrapper {
+        margin-top: 390px;
+    }
 }
  
 /* small mobile :320px. */
@@ -465,12 +511,23 @@
     .slider-height {
         background-repeat: no-repeat;
         padding-bottom: 70px;
-        background-size: cover;
-        background-position: bottom;
+        background-size: contain;
+        background-position: top;
+    }
+    .logo {
+        margin-top: 0;
     }
 
-    .logo img{
-        max-width: 76%;
+    .transparent-header {
+        padding: 0;
+    }
+
+    .header-revel {
+        margin-top: -30px;
+    }
+
+    .logo img {
+        max-width: 40%;
     }
     .mean-container a.meanmenu-reveal {
         padding: 20px 20px;
@@ -478,7 +535,8 @@
     }
 
     .slider-text {
-        margin-left: 30px;
+        padding-top: 10px;
+        margin-left: 0;
     }
 
     .ab-img img {
@@ -504,8 +562,7 @@
     }
 
     .single-list-right {
-        position: relative;
-        margin-left: 20px;
+        margin-left: 0;
     }
 
     .global-img img {
@@ -518,8 +575,18 @@
     }
 
     .slider-text h2 {
-        font-size: 33px
+        font-size: 22px;
+        margin-bottom: 0;
+        line-height: 1;
     }
+
+    .slider-text p {
+        margin-bottom: 5px;
+        font-size: 11px;
+        line-height: 1.3;
+        word-break: normal;
+    }
+
     p {
         font-size: 15px;
     }
@@ -533,11 +600,13 @@
     }
 
     .section-title h3 {
-        font-size: 30px;
+        font-size: 28px;
     }
     .btn {
-        font-size: 18px;
-        padding: 20px 20px;
+        font-size: 7px;
+        line-height: 0;
+        padding: 10px 10px;
+        letter-spacing: 0;
     }
 
     .service-wrapper {
@@ -555,11 +624,14 @@
     }
 
     .single-list-left p {
-         margin-top: 0;
+        margin-top: 0;
+        margin-left: 10px;
     }
 
     .single-list-right p {
         margin-top: 0;
+        text-align: left;
+        margin-left: 10px;
     }
 
     .ab-details-wrapper {
@@ -697,7 +769,127 @@
     .sd-box h4 {
         font-size: 22px;
     }
+    .overlay {
+        padding: 0;
+    }
 
+    .nav-primary-list {
+        float: left;
+        width: 60%;
+    }
+
+    .nav-primary-list li {
+        margin-bottom: 2.5rem;
+    }
+
+    .nav-primary-list h2 {
+        font-size: 22px!important;
+        line-height: 32px;
+    }
+
+    .nav-right-block {
+        padding-top: 0 !important;
+    }
+
+    .nav-left-bottom {
+        width: 38%;
+        float: right;
+    }
+
+    .nav-left-bottom li {
+        margin-bottom: 1.8rem;
+    }
+
+    .nav-left-bottom ul a {
+        font-size: 16px!important;
+        line-height: 26px;
+    }
+
+    .overlay-content {
+        margin: 80px 0 0px 0;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        right: 20px;
+        width: 39px;
+        top: -5%;
+    }
+
+    .nav-right-block .btn {
+        font-size: 20px;
+        padding: 30px 40px;
+        letter-spacing: .1rem;
+        margin-top: 30px !important;
+    }
+
+    .nav-media-block {
+        margin-top: 1rem;
+    }
+
+    .nav-media-block li {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 20px;
+        margin-top: 13px;
+    }
+    .nav-left-block {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        right: 45px;
+        width: 39px;
+        top: 0;
+    }
+
+    .ab-img {
+         margin-left: 0;
+    }
+
+    .top-img {
+        flex-direction: column-reverse!important;
+    }
+
+    .marketing-img img {
+        max-width: 80%;
+    }
+
+    .marketing-wrapper {
+        margin-top: 350px;
+    }
+
+    .marketing-img {
+        margin-left: 0;
+        top: 22%;
+        left: 40px;
+    }
+
+    .single-list-right img {
+        right: 0;
+        top: 5px;
+        left: -10px;
+    }
+
+    .single-list-left img {
+        right: 0;
+        top: 3px;
+        left: -10px;
+    }
+
+    .marketing-wrapper p {
+        font-size: 9px;
+    }
+
+    .marketing-wrapper p {
+        font-size: 9px;
+        text-align: left;
+    }
 }
  
 /* Large Mobile :480px. */

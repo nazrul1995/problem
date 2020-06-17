@@ -29,43 +29,14 @@
 <body>
 
 <!-- preloader  -->
-<div id="preloader">
-    <div id="ctn-preloader" class="ctn-preloader">
-        <div class="animation-preloader">
-            <div class="spinner"></div>
-            <div class="txt-loading">
-                        <span data-text-preloader="X" class="letters-loading">
-                           A
-                        </span>
-                <span data-text-preloader="I" class="letters-loading">
-                            G
-                        </span>
-                <span data-text-preloader="S" class="letters-loading">
-                            E
-                        </span>
-                <span data-text-preloader="E" class="letters-loading">
-                            N
-                        </span>
-                <span data-text-preloader="N" class="letters-loading">
-                            C
-                        </span>
-            </div>
-        </div>
-        <div class="loader">
-            <div class="row">
-                <div class="col-3 loader-section section-left">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-left">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-right">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-right">
-                    <div class="bg"></div>
-                </div>
-            </div>
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
+
         </div>
     </div>
 </div>
@@ -80,11 +51,15 @@
                 </div>
                 <div class="col-xl-10 col-lg-10">
                     <div class="menu-wrapper">
-                        <div class="header-revel pl-65 f-right d-none d-lg-block">
-                            <a onclick="openNav()"><img src="img/shape/menu-icon.png" alt=""></a>
+                        <div class="header-revel pl-65 f-right">
+                            <a onclick="openNav()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
                         </div>
                         <div class="main-menu f-right">
-                            <nav id="mobile-menu">
+                            <nav id="mobile-menu" class="d-none d-lg-block">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li class="active"><a href="service.html">Service</a></li>
@@ -95,7 +70,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="mobile-menu"></div>
+                    <!--<div class="mobile-menu"></div>-->
                 </div>
             </div>
         </div>
@@ -411,38 +386,48 @@
     </section>
     <!-- live 3dEnd area-->
     <div id="myNav" class="overlay">
-        <div class="container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/menu-icon.png" alt=""></a>
+        <div class="container-fluid">
+            <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img src="img/menu-icon.png" class="img-fluid" alt="">
+            </div>
             <div class="overlay-content">
-                <div class="overlay-nav-upper">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="product.html">Live 3D</a></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="overlay-nav-lower">
-                            <ul>
+                <div class="nav-full-block row align-items-end">
+                    <div class="nav-left-block col-md-7 pb-4 p-0 p-sm-1 js-transition">
+                        <!--  main Header nav-list -->
+                        <ul class="nav-primary-list">
+
+                            <li><a href="about.html">
+                                <h2>About</h2></a></li>
+                            <li><a href="service.html">
+                                <h2>Services</h2></a></li>
+                            <li><a href="service.html">
+                                <h2>Projects</h2></a></li>
+                            <li><a href="service.html">
+                                <h2>Live 3D</h2></a></li>
+                        </ul>
+                        <!-- Sub-nav list-items -->
+                        <div class="nav-left-bottom p-0 p-sm-1">
+                            <ul class="nav-secondary-list mt-0 mt-sm-3 mt-lg-4">
                                 <li><a href="service.html">Virtual Reality</a></li>
                                 <li><a href="service.html">Augmented Reality</a></li>
                                 <li><a href="service.html">Interactive Marketing</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="overlay-btn f-right mt-100"><a href="contact.html" class="btn">Reach Us</a></div>
+                    <div class="nav-right-block col-md-5 pt-5 pt-sm-0 js-transition">
+                        <div class="nav-right-block__blog my-sm-5 my-md-0 text-center text-sm-left text-md-right">
+                            <a class="mt-4 btn" href="contact.html">Get in touch</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <ul class="overlay-social">
-                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="full-nav-social-block">
+                    <ul class="nav-media-block text-center js-transition">
+                        <li class="d-inline-block"><a class="text-white" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f text-white d-block d-sm-none"></i><span class="d-none d-sm-block">Facebook</span></a></li>
+
+                        <li class="d-inline-block"><a class="text-white" href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter text-white d-block d-sm-none"></i><span class="d-none d-sm-block">Twitter</span></a></li>
+                        <li class="d-inline-block"><a class="text-white" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram text-white d-block d-sm-none"></i><span class="d-none d-sm-block">Instagram</span></a></li>
+                        <li class="d-inline-block"><a class="text-white" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin text-white d-block d-sm-none"></i><span class="d-none d-sm-block">LinkedIn</span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
