@@ -56,6 +56,12 @@ $(window).on('scroll', function () {
 	}
 });
 
+	// One Page Nav
+	var top_offset = $('.header-area').height() - 0;
+	$('.mean-menu nav ul').onePageNav({
+		currentClass: 'active',
+		scrollOffset: top_offset,
+	});
 
 
 	var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
