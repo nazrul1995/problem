@@ -80,8 +80,8 @@
     }
 
     .our-service-img img {
-        max-width: 120%;
-        margin-left: -30px;
+        max-width: 100%;
+        margin-left: 0;
     }
     .ser-box {
         padding: 30px 58px;
@@ -511,7 +511,7 @@
     .slider-height {
         background-repeat: no-repeat;
         padding-bottom: 70px;
-        background-size: contain;
+        background-size: cover;
         background-position: top;
     }
     .logo {
@@ -535,8 +535,9 @@
     }
 
     .slider-text {
-        padding-top: 10px;
+        padding-top: 0;
         margin-left: 0;
+        top: 35px;
     }
 
     .ab-img img {

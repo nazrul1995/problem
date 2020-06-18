@@ -50,15 +50,15 @@ $('#mobile-menu').meanmenu({
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
 	if (scroll < 245) {
-		$(".header-sticky").removeClass("sticky");
+		$("#header-sticky").removeClass("sticky");
 	} else {
-		$(".header-sticky").addClass("sticky");
+		$("#header-sticky").addClass("sticky");
 	}
 });
 
 	// One Page Nav
-	var top_offset = $('.header-area').height() - 0;
-	$('.mean-menu nav ul').onePageNav({
+	var top_offset = $('.header-area').height() - 10;
+	$('.widget ul').onePageNav({
 		currentClass: 'active',
 		scrollOffset: top_offset,
 	});
@@ -165,20 +165,11 @@ $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
 
+	/*----------------------------------------
+              Wow.js Plugin
+          ----------------------------------------*/
 
-
-/*// scrollToTop
-$.scrollUp({
-	scrollName: 'scrollUp', // Element ID
-	topDistance: '300', // Distance from top before showing element (px)
-	topSpeed: 300, // Speed back to top (ms)
-	animation: 'fade', // Fade, slide, none
-	animationInSpeed: 200, // Animation in speed (ms)
-	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
-	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-});*/
-
+	new WOW().init();
 
 
 
