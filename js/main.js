@@ -171,6 +171,11 @@ $('.popup-video').magnificPopup({
 
 	new WOW().init();
 
+	AOS.init({
+		offset: 400,
+		duration: 1000
+	});
+
 
 
 })(jQuery);
