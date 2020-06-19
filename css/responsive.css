@@ -304,6 +304,7 @@
 
     .header-revel {
         margin-top: -50px;
+        padding-right: 80px;
     }
 
     .overlay .btn {
@@ -523,15 +524,16 @@
     }
 
     .header-revel {
-        margin-top: -30px;
+        margin-top: -25px;
+        padding-right: 50px;
     }
 
     .logo img {
         max-width: 40%;
     }
     .mean-container a.meanmenu-reveal {
-        padding: 20px 20px;
-        top: -34px;
+        padding: 5px 10px;
+        top: 0px;
     }
 
     .slider-text {

@@ -918,7 +918,10 @@ ul.nav-primary-list ul li a {
     overflow: hidden;
 }
 
-
+.box-wrapper {
+    position: relative;
+    z-index: 1;
+}
 .reality-content {
     background-color: rgb(255, 255, 255);
     box-shadow: -25.66px 22.306px 22px 0px rgba(30, 21, 65, 0.15);
